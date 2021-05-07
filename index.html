@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Family book</title>
+    </head>
+    <body>
+        <center>
+        <h1>Family Book</h1>
+        <br> <br>
+        <img id="family_img" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg">
+        <h3 id="one">1. Our family book</h3>
+        <button type="button" onclick="family()">Next</button>
+        <br>
+        <script>
+            var names=[
+                "my mom (kiran roy)",
+                "my dad (arrijit roy)",
+                "me (anika roy)",
+                "my grandmom (veena satish)"
+            ];
+            var images=[
+                "mom.jpg",
+                "father.jpg",
+                "anikaa.jpg",
+                "grandmomm.jpg"              
+            ];
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("family_img").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }
+            }
+        </script>
+        </center>
+    </body>
+</html>
